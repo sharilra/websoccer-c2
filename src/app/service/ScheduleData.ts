@@ -1,28 +1,30 @@
-import { Schedule } from "src/interface/schedule";
-import { Team } from "src/interface/team";
+import { Schedule } from "../interface/schedule";
+import { Team } from "../interface/team";
 
-export const SEASON_SCHEDULE:Schedule [] = [
-    {id: 1, PlayingDate: new Date(2021,08,01),HomeTeam:'FUG', 
-    AwayTeam:'FUG2', HomeScore:'2', AwayScore:'3',
-    RefName:'Ade', notes:'Pertandingan overtime'},
-    {id: 2, PlayingDate: new Date(2021,08,01),HomeTeam:'RRQ', 
-    AwayTeam:'AE', HomeScore:'2', AwayScore:'0',
-    RefName:'Bangsin', notes:'Pertandingan overtime'},
-    {id: 3, PlayingDate: new Date(2021,08,01),HomeTeam:'BTR', 
-    AwayTeam:'EVOS', HomeScore:'1', AwayScore:'2',
-    RefName:'ApTzy', notes:'Pertandingan overtime'},
-    {id: 4, PlayingDate: new Date(2021,08,01),HomeTeam:'AURA', 
-    AwayTeam:'AE', HomeScore:'2', AwayScore:'1',
-    RefName:'AndryTzy', notes:'Pertandingan overtime'},
-    {id: 5, PlayingDate: new Date(2021,08,01),HomeTeam:'GEEK', 
-    AwayTeam:'NEUS', HomeScore:'2', AwayScore:'0',
-    RefName:'MuhammadAnteng', notes:'Pertandingan overtime'},
+export const SEASON_SCHEDULE:Schedule[] = [
+   
+    {id:1,playingDate:new Date(2021,8,10),HomeTeam: 'Real Madrid',
+    AwayTeam:'Barcelona',HomeScore:1,AwayScore:3,
+    RefName:'Budi',notes:'Pertandingan Overtime'},
+    {id:2,playingDate:new Date(2021,8,11),HomeTeam: 'Atletico Madrid',
+    AwayTeam:'Espanyol',HomeScore:4,AwayScore:2,
+    RefName:'Anjayani',notes:'Pertandingan ngelek'},
+    {id:3,playingDate:new Date(2021,8,13),HomeTeam: 'Real Madrid',
+    AwayTeam:'Atletico Madrid',HomeScore:2,AwayScore:4,
+    RefName:'Parto',notes:'Pertandingan ada kerusuhan'},
+    {id:4,playingDate:new Date(2021,8,14),HomeTeam: 'Barcelona',
+    AwayTeam:'Valencia',HomeScore:2,AwayScore:4,
+    RefName:'Parto',notes:'Pertandingan 3 kartu merah'},
+    {id:5,playingDate:new Date(2021,8,15),HomeTeam: 'Valencia',
+    AwayTeam:'Villareal',HomeScore:2,AwayScore:3,
+    RefName:'Parno',notes:'Pertandingan aman'},
 ]
 
 export const TEAMS:Team [] = [
-    {id:1, name:'RRQ', type: 'Over 30'},
-    {id:2, name:'EVOS', type: 'Over 30'},
-    {id:3, name:'AE', type: 'Over 30'},
-    {id:4, name:'AURA', type: 'Over 30'},
-    {id:5, name:'FUG', type: 'Over 30'},
+    {id:1,name:'Barclona',type:'Over 30'},
+    {id:2,name:'Real Madrid',type:'Over 30'},
+    {id:3,name:'Atletico Madrid',type:'Over 30'},
+    {id:4,name:'Valencia',type:'Over 30'},
+    {id:5,name:'Villareal',type:'Over 30'},
+    {id:6,name:'Espanyol',type:'Over 30'},
 ]

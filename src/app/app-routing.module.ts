@@ -5,9 +5,9 @@ import { ScoringsComponent } from './scorings/scorings.component';
 import { StandingsComponent } from './standings/standings.component';
 
 const routes: Routes = [
+  {path:'admin',component:AdminComponent},
   {path:'scorings',component:ScoringsComponent},
-  {path:'standings',component:StandingsComponent},
-  {path:'admin',component:AdminComponent}
+  {path:'standings',component:StandingsComponent}
 ];
 
 @NgModule({
